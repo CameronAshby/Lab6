@@ -61,7 +61,7 @@ function drawCard(playerNum) {
                     getValue(response.cards[0].code, playerNum);
                 }
                 else {
-                    $('.pTwoDrawContainer').append('<img src="'+response.cards[0].image+'">');
+                    $('.cardContainerTwo').append('<img src="'+response.cards[0].image+'">');
                     getValue(response.cards[0].code, playerNum);
                 }
                 deck.remaining -= 1;
