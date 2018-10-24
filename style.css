@@ -1,0 +1,42 @@
+html {
+    background-image: url(blackJack.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.playerContainer {
+    display: flex;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+img {
+    padding: 0 5px;
+}
+
+.mainTitle {
+    text-align: center;
+}
+
+.cardContainerOne, .cardContainerTwo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#playerOne, #playerTwo {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

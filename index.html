@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackJack Lab</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="mainTitle">BlackJack</h1>
+<div class="playerContainer">
+    <div id="playerOne">
+        <h2>Player One</h2>
+        <h3 class="total">Card Total: </h3>
+        <h3 class="pOneTotal"></h3>
+        <div class="buttonContainer">
+            <button class="hitOne" onclick="drawCard('One')">Hit</button>
+            <button class="standOne" onclick="stand('One')">Stand</button>
+        </div>
+        <div class="cardContainerOne">
+            <img class="pOneCardOne">
+            <img class="pOneCardTwo">
+        </div>
+    </div>
+    <div id="playerTwo">
+        <h2>Player Two</h2>
+        <h3 class="total">Card Total: </h3>
+        <h3 class="pTwoTotal"></h3>
+        <div class="buttonContainer">
+            <button class="hitTwo" onclick="drawCard('Two')">Hit</button>
+            <button class="standTwo" onclick="stand('Two')">Stand</button>
+        </div>
+        <div class="cardContainerTwo">
+            <div class="pTwoDrawContainer">
+                <img class="pTwoCardOne">
+                <img class="pTwoCardTwo">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
